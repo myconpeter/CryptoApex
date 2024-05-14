@@ -4,7 +4,7 @@ const {ensureAuthenticated} = require('../config/auth');
 
 
 // get homepage
-router.get('/', ensureAuthenticated, async (req, res) => {
+router.get('/', async (req, res) => {
   res.render('index');
 });
 

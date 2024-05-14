@@ -6,10 +6,14 @@ const passport = require ('passport');
 const session = require('express-session');
 const flash = require("connect-flash");
 const ejs = require('ejs');
+const dotenv = require('dotenv')
 
-const PORT  = process.env.PORT
+
 
 const app = express();
+dotenv.config()
+
+const PORT  = process.env.PORT
 
 //passport config:
 require('./config/passport')

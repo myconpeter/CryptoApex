@@ -1,23 +1,5 @@
 <%- include ('./partials/indexheader') %>
 
-
-
-
-
-
-
-
-<!-- omooooooooooooo -->
-
-
-
-
-
-
-
-
-
-
     <main>
         <div
         class="relative pt-16 pb-32 flex content-center items-center justify-center"
@@ -42,9 +24,34 @@
                 <p class="mt-4 text-lg text-gray-300">
                   We help build financial stability, and teach financial building and help show the best investments.                </p>
               </div>
+
+
+              <% if(!currentUser){ %>
+                <div class="mt-6">
+                  <a href="/login" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Login
+                   
+                </a>
+          
+                <a href="/register" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                  Register
+                  
+              </a>
+                </div>  
+        
+                <%  } else { %>
+                  
+  
+                  <%  } %> 
+              
+     
             </div>
           </div>
         </div>
+
+        
+    
+
         <div
           class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
           style="height: 70px;"
@@ -65,6 +72,7 @@
           </svg>
         </div>
       </div>
+
       <section class="pb-20 bg-gray-300 -mt-24">
         <div class="container mx-auto px-4">
           <div class="flex flex-wrap">
@@ -136,7 +144,7 @@
             </div>
             <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
               <div
-                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-pink-600"
+                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg"
               >
                 <img
                   alt="..."

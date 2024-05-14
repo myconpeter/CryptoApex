@@ -2,10 +2,8 @@ const bcrypt = require('bcrypt');
 const User = require('../models/user');
 
 
-
-// ... (Validation and hashing functions remain the same)
 function validateInputData(reqBody) {
-  const { fullname, username, email, telephone, password } = req.body;
+  const { fullname, username, email, telephone, password } = reqBody;
   const errors = [];
   
 
@@ -25,7 +23,7 @@ function validateInputData(reqBody) {
 
 // Function to hash the user's password
 async function hashPassword(password) {
-  const salt = await bcrypt.genSalt(10);
+  const salt = await bcrypt.genSalt(12);
   return bcrypt.hash(password, salt);
 }
 
@@ -47,14 +45,9 @@ async function registerUser(req, res) {
 
   try {
     const existingEmailUser = await User.findOne({ email }).exec();
-    const existingUsernameUser = await User.findOne({username }).exec();
 
     if (existingEmailUser) {
-      errors.push({ msg: 'Email already registered, please choose another' });
-    }
-
-    if (existingUsernameUser) {
-      errors.push({ msg: 'Username already registered, please choose another' });
+      errors.push({ msg: 'Email already registered' });
     }
 
     if (errors.length > 0) {
@@ -67,6 +60,7 @@ async function registerUser(req, res) {
     const hashedPassword = await hashPassword(req.body.password);
     const newUser = new User({
       ...req.body,
+    
       password: hashedPassword,
     
     });
