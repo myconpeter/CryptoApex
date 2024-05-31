@@ -1,585 +1,580 @@
-<%- include ('./partials/indexheader') %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+New Event
+http://www.templatemo.com/tm-486-new-event
+-->
+<title>Helping-Hands - Crypto-Investment</title>
+<meta name="description" content="">
+<meta name="author" content="">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/owl.theme.css">
+<link rel="stylesheet" href="css/owl.carousel.css">
 
-    <main>
-        <div
-        class="relative pt-16 pb-32 flex content-center items-center justify-center"
-        style="min-height: 75vh;"
-      >
-        <div
-          class="absolute top-0 w-full h-full bg-center"
-          style='background-image: url("/img/crypto1.jpeg");'
-        >
-          <span
-            id="blackOverlay"
-            class="w-full h-full absolute opacity-75 bg-black"
-          ></span>
-        </div>
-        <div class="container relative mx-auto">
-          <div class="items-center flex flex-wrap">
-            <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
-              <div class="pr-12">
-                <h1 class="text-white font-semibold text-5xl">
-                  Crypto Investment
-                </h1>
-                <p class="mt-4 text-lg text-gray-300">
-                  Empowering Your Digital Investments for a Brighter Financial Future
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
-          style="height: 70px;"
-        >
-          <svg
-            class="absolute bottom-0 overflow-hidden"
-            xmlns="http://www.w3.org/2000/svg"
-            preserveAspectRatio="none"
-            version="1.1"
-            viewBox="0 0 2560 100"
-            x="0"
-            y="0"
-          >
-            <polygon
-              class="text-gray-300 fill-current"
-              points="2560 0 2560 100 0 100"
-            ></polygon>
-          </svg>
-        </div>
-      </div>
-      <section class="pb-20 bg-gray-300 -mt-24">
-        <div class="container mx-auto px-4">
-          <div class="flex flex-wrap">
-            <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
-              <div
-                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
-              >
-                <div class="px-4 py-5 flex-auto">
-                  <div
-                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400"
-                  >
-                    <i class="fas fa-chart-line"></i>
-                  </div>
-                  <h6 class="text-xl font-semibold">Decentralization</h6>
-                  <p class="mt-2 mb-4 text-gray-600">
-                    Unlike traditional investments controlled by institutions, cryptocurrencies operate on decentralized networks, potentially offering greater autonomy and security from centralized control.                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="w-full md:w-4/12 px-4 text-center">
-              <div
-                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
-              >
-                <div class="px-4 py-5 flex-auto">
-                  <div
-                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400"
-                  >
-                    <i class="fas fa-wallet"></i>
-                  </div>
-                  <h6 class="text-xl font-semibold">Transparency</h6>
-                  <p class="mt-2 mb-4 text-gray-600">
-                    Blockchain technology, the underlying technology of most cryptocurrencies, provides a transparent and immutable record of transactions, enhancing trust and security.                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="pt-6 w-full md:w-4/12 px-4 text-center">
-              <div
-                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
-              >
-                <div class="px-4 py-5 flex-auto">
-                  <div
-                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400"
-                  >
-                    <i class="fas fa-coins"></i>
-                  </div>
-                  <h6 class="text-xl font-semibold">Accessibility</h6>
-                  <p class="mt-2 mb-4 text-gray-600">
-                    Compared to traditional investment options with high minimum investment amounts, cryptocurrencies can be more accessible to a wider range of investors with lower starting points.                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        
-        </div>
-      </section>
-      
-      <section class="bg-white">
-        <div class="container gap-8 py-8 mx-auto text-center md:grid-cols-3">
-            <div>
-                <h5 class="text-5xl font-bold text-black">
-                    <span class="inline text-black">
-                      Trusted by over 10,000 customers
-                    </span>
-                    
-                </h5>
-                </div>   
-          </div>
-    
-        </section>
-  <hr>
-  <br>
-  <section class="bg-white">
+<!-- Main css -->
+<link rel="stylesheet" href="css/style.css">
 
-    <div class="flex flex-wrap justify-center text-center mb-4">
-      <div class="w-full lg:w-6/12 px-4">
-        <h2 class="text-4xl font-semibold text-black">What we offer</h2>
-         
-       
-      </div>
-    </div>
-    <!-- <div class="flex flex-wrap justify-end text-right mb-12 mx-6">
-      <div class="">
-        <a class="text-brightYellow" href="/productAndService"> See More ..</a>
+<!-- Google Font -->
+<link href='https://fonts.googleapis.com/css?family=Poppins:400,500,600' rel='stylesheet' type='text/css'>
 
-      </div>
-    </div> -->
+</head>
+<body data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
 
-  <div class="flex flex-wrap items-center justify-center">
+<!-- =========================
+     PRE LOADER       
+============================== -->
+<div class="preloader">
 
+	<div class="sk-rotating-plane"></div>
 
-  <div class="w-64 p-2 m-auto shadow-lg ">
-    <div class="bg-gray-300 w-full">
-      <img src="/img/realEstate.jpeg" alt="adidas" class="rounded-2xl p-4 m-auto h-36"/>
-    </div>
-    <div class="p-4 m-3  rounded-lg">
-        <p class="text-xl font-bold text-black ">
-          REAL ESTATE
-        </p>
-        <p class="text-xs text-black">
-          Your Trusted Guide from First Home to Investment Property - We navigate every step of your real estate journey, from buying your first home to building a successful investment portfolio.           <a class="text-brightYellow" href="/productAndService">Read more</a>
-          
-        </p>
-        <br/>
-        <!-- <div class="flex flex-col justify-between text-xs ">
-            <p class="text-black text-left">
-                ₦ 4,000
-            </p>
-         <hr>
-          
-          <p class="text-black text-xs">
-               Day income: 350
-            </p>
-            
-           
-        </div> -->
-    </div>
 </div>
 
-<div class="w-64 p-2 m-auto shadow-lg ">
-  <div class="bg-gray-300 w-full">
-    <img src="/img/cashInvest.jpeg" alt="adidas" class="rounded-2xl p-4 m-auto h-36"/>
-  </div>
-  <div class="p-4 m-3  rounded-lg">
-      <p class="text-xl font-bold text-black ">
-        Cash Investment 
-      </p>
-      <p class="text-xs text-black">
-        Explore our diverse range of flexible cash investment options, from high-yield savings accounts and certificates of deposit to money market funds, all designed to fit your unique financial goals.         <a class="text-brightYellow" href="/productAndService">Read more</a>
-        
-      </p>
-      <br/>
-      <!-- <div class="flex flex-col justify-between text-xs ">
-          <p class="text-black text-left">
-              ₦ 10,000
-          </p>
-       <hr>
-        
-        <p class="text-black text-xs">
-             Day income: 750
-          </p>
-          
-         
-      </div> -->
-  </div>
-</div>
 
-<div class="w-64 p-2 m-auto shadow-lg ">
-  <div class="bg-gray-300 w-full">
-    <img src="/img/crypto.jpeg" alt="adidas" class="rounded-2xl p-4 m-auto h-36"/>
-  </div>
-  <div class="p-4 m-3  rounded-lg">
-      <p class="text-xl font-bold text-black ">
-        Crypto Investment  
-      </p>
-      <p class="text-xs text-black">
-        Navigate the exciting world of crypto with confidence. Our secure investment solutions and expert guidance empower you to explore a variety of digital assets, from established cryptocurrencies to emerging blockchain technologies            <a class="text-brightYellow" href="/productAndService">Read more</a>
-        
-      </p>
-      <br/>
-      <!-- <div class="flex flex-col justify-between text-xs ">
-          <p class="text-black text-left">
-              ₦ 15,000
-          </p>
-       <hr>
-        
-        <p class="text-black text-xs">
-             Day income: 900
-          </p>
-          
-         
-      </div> -->
-  </div>
-</div>
+<!-- =========================
+     NAVIGATION LINKS     
+============================== -->
+<div class="navbar navbar-fixed-top custom-navbar" role="navigation">
+	<div class="container">
 
-<div class="w-64 p-2 m-auto shadow-lg ">
-  <div class="bg-gray-300 w-full">
-    <img src="/img/assest.jpeg" alt="adidas" class="rounded-2xl p-4 m-auto h-36"/>
-  </div>
-  <div class="p-4 m-3  rounded-lg">
-      <p class="text-xl font-bold text-black ">
-        Asset Management  
-      </p>
-      <p class="text-xs text-black">
-        Achieve a secure and worry-free financial future with Helping Hands' expert asset management. Our team of experienced professionals takes the stress out of managing your assets, allowing you to focus on what matters most - enjoying life while knowing your finances are in good hands.                <a class="text-brightYellow" href="/productAndService">Read more</a>
-        
-      </p>
-      <br/>
-      <!-- <div class="flex flex-col justify-between text-xs ">
-          <p class="text-black text-left">
-              ₦ 25,000
-          </p>
-       <hr>
-        
-        <p class="text-black text-xs">
-             Day income: 1,200
-          </p>
-          
-         
-      </div> -->
-  </div>
-</div>
+		<!-- navbar header -->
+		<div class="navbar-header">
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+			</button>
+			<a href="#" class="navbar-brand">
+        <img
+        style="width: 40px; height: 40px;"
+        src="img/loog.png"
+        alt="mich" />
 
-      </div>    
-    </section>
-
-
-    <link href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.css" rel="stylesheet" />
-
-<script type="module">
-  import KeenSlider from 'https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/+esm'
-
-  const keenSlider = new KeenSlider(
-    '#keen-slider',
-    {
-      loop: true,
-      slides: {
-        origin: 'center',
-        perView: 1.25,
-        spacing: 16,
-      },
-      breakpoints: {
-        '(min-width: 1024px)': {
-          slides: {
-            origin: 'auto',
-            perView: 2.5,
-            spacing: 32,
-          },
-        },
-      },
-    },
-    []
-  )
-
-  const keenSliderPrevious = document.getElementById('keen-slider-previous')
-  const keenSliderNext = document.getElementById('keen-slider-next')
-
-  keenSliderPrevious.addEventListener('click', () => keenSlider.prev())
-  keenSliderNext.addEventListener('click', () => keenSlider.next())
-</script>
-
-<section class="bg-gray-50">
-  <div class="mx-auto max-w-[1340px] px-4 py-12 sm:px-6 lg:me-0 lg:py-16 lg:pe-0 lg:ps-8 xl:py-24">
-    <div class="max-w-7xl items-end justify-between sm:flex sm:pe-6 lg:pe-8">
-      <h2 class="max-w-xl text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-        Read trusted reviews from our customers
-      </h2>
-
-      <div class="mt-8 flex gap-4 lg:mt-0">
-        <button
-          aria-label="Previous slide"
-          id="keen-slider-previous"
-          class="rounded-full border border-rose-600 p-3 text-rose-600 transition hover:bg-rose-600 hover:text-white"
+      <a
+        href="/cryptoInvestment"
+        class="navbar-brand"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="size-5 rtl:rotate-180"
-          >
-            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-          </svg>
-        </button>
+        Crypto-Investment
+      </a></a>
+		</div>
 
-        <button
-          aria-label="Next slide"
-          id="keen-slider-next"
-          class="rounded-full border border-rose-600 p-3 text-rose-600 transition hover:bg-rose-600 hover:text-white"
-        >
-          <svg
-            class="size-5 rtl:rotate-180"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M9 5l7 7-7 7"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-            />
-          </svg>
-        </button>
-      </div>
-    </div>
+		<div class="collapse navbar-collapse">
 
-    <div class="-mx-6 mt-8 lg:col-span-2 lg:mx-0">
-      <div id="keen-slider" class="keen-slider">
-        <div class="keen-slider__slide">
-          <blockquote
-            class="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12"
-          >
-            <div>
-              <div class="flex gap-0.5 text-green-500">
-                <svg
-                  class="h-5 w-5"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                  />
-                </svg>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="/" class="smoothScroll" style="font-size: 13px;">Home</a></li>
+				<li><a href="#overview" class="smoothScroll" style="font-size: 13px;">About</a></li>
+				<li><a href="#speakers" class="smoothScroll" style="font-size: 13px;">Service</a></li>
+				<li><a href="#program" class="smoothScroll" style="font-size: 13px;">Market Overview</a></li>
+				<li><a href="#test" class="smoothScroll" style="font-size: 13px;">Testimonies</a></li>
 
-                <svg
-                  class="h-5 w-5"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                  />
-                </svg>
+				<li><a href="#venue" class="smoothScroll" style="font-size: 13px;">F A Q</a></li>
 
-                <svg
-                  class="h-5 w-5"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                  />
-                </svg>
+        <% if(!currentUser){ %>
+				<li> <a href="/login"  style="font-size: 13px;">Sign In</a></li>
+				<li><a href="/register" class="smoothScroll" style="font-size: 13px;">Sign Up</a></li>
+        <% } else { %> <li><a href="/profile" class="smoothScroll" style="font-size: 13px;">Dashboard</a></li> <% } %>
+			</ul>
 
-                <svg
-                  class="h-5 w-5"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                  />
-                </svg>
+		</div>
 
-                <svg
-                  class="h-5 w-5"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                  />
-                </svg>
-              </div>
+	</div>
+</div>
 
-              <div class="mt-4">
-                <p class="text-2xl font-bold text-yellow-900 sm:text-3xl">Real Estate</p>
 
-                <p class="mt-4 leading-relaxed text-gray-700">
-                  I was navigating a complex real estate investment and Helping Hand's expertise was invaluable. Their guidance and asset management skills helped me make informed decisions and maximize my returns. 5 stars and highly recommended!
-                </p>
-              </div>
-            </div>
+<!-- =========================
+    INTRO SECTION   
+============================== -->
+<section id="intro" class="parallax-section">
+	<div class="container">
+		<div class="row">
 
-            <footer class="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
-              &mdash; Michael Arthur
-            </footer>
-          </blockquote>
-        </div>
+			<div class="col-md-12 col-sm-12">
+				<h3 class="wow bounceIn" data-wow-delay="0.9s">Helping-Hands </h3>
+				<h1 class="wow fadeInUp" data-wow-delay="1.6s">Crypto Investment</h1>
+				<a href="#register" class="btn btn-lg btn-danger smoothScroll wow fadeInUp" data-wow-delay="2.3s">GET STARTED NOW</a>
+			</div>
 
-        <div class="keen-slider__slide">
-          <blockquote
-            class="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12"
-          >
-            <div>
-              <div class="flex gap-0.5 text-green-500">
-                <svg
-                  class="h-5 w-5"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                  />
-                </svg>
 
-                <svg
-                  class="h-5 w-5"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                  />
-                </svg>
-
-                <svg
-                  class="h-5 w-5"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                  />
-                </svg>
-
-                <svg
-                  class="h-5 w-5"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                  />
-                </svg>
-
-                <svg
-                  class="h-5 w-5"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                  />
-                </svg>
-              </div>
-
-              <div class="mt-4">
-                <p class="text-2xl font-bold text-yellow-900 sm:text-3xl">Crypto Investment</p>
-
-                <p class="mt-4 leading-relaxed text-gray-700">
-                  Helping Hand's team helped me diversify my portfolio by introducing me to crypto opportunities. Their knowledge and support gave me the confidence to invest in a new asset class. Excellent service and results!
-                </p>
-              </div>
-            </div>
-
-            <footer class="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
-              &mdash; Sarah George
-            </footer>
-          </blockquote>
-        </div>
-
-        <div class="keen-slider__slide">
-          <blockquote
-            class="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12"
-          >
-            <div>
-              <div class="flex gap-0.5 text-green-500">
-                <svg
-                  class="h-5 w-5"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                  />
-                </svg>
-
-                <svg
-                  class="h-5 w-5"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                  />
-                </svg>
-
-                <svg
-                  class="h-5 w-5"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                  />
-                </svg>
-
-                <svg
-                  class="h-5 w-5"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                  />
-                </svg>
-
-                <svg
-                  class="h-5 w-5"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                  />
-                </svg>
-              </div>
-
-              <div class="mt-4">
-                <p class="text-2xl font-bold text-yellow-900 sm:text-3xl">Cash Investment</p>
-
-                <p class="mt-4 leading-relaxed text-gray-700">
-                  I was struggling to manage my cash investments, but Helping Hand's experts took the reins and optimized my portfolio. Their asset management services have earned me a significant return on investment. 5 stars and grateful!
-                </p>
-              </div>
-            </div>
-
-            <footer class="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
-              &mdash; Abdullah Bilal
-            </footer>
-          </blockquote>
-        </div>
-      </div>
-    </div>
-  </div>
+		</div>
+	</div>
 </section>
-    
-    <!-- TRANSACTION FOR THE USER -->
-<br />
-   
 
-    
-      
-      
-    <%- include ('./partials/indexfooter') %>
 
+<!-- =========================
+    OVERVIEW SECTION   
+============================== -->
+<section id="overview" class="parallax-section">
+	<div class="container">
+		<div class="row">
+
+			<div class="wow fadeInUp col-md-6 col-sm-6" data-wow-delay="0.6s">
+        <h3>Welcome to Helping-Hands Crypto Investment, where we're dedicated to empowering our clients with cutting-edge tools and resources to reach their investment potential. Our platform offers a range of investment opportunities, including cryptocurrency, as well as innovative copytrading services designed to help you achieve your financial goals.</h3>
+				<p>At Helping-Hands Crypto Investment, our team of seasoned experts and dedicated professionals is passionately committed to providing unparalleled service and support, empowering our clients with the expertise, guidance, and cutting-edge tools they need to thrive and achieve success in the dynamic cryptocurrency market.</p>
+			</div>
+					
+			<div class="wow fadeInUp col-md-6 col-sm-6" data-wow-delay="0.9s">
+				<img src="img/crypto3.jpeg" class="img-responsive" alt="Overview">
+			</div>
+
+		</div>
+	</div>
+</section>
+
+
+<!-- =========================
+    DETAIL SECTION   
+============================== -->
+<section id="detail" class="parallax-section">
+	<div class="container">
+		<div class="row">
+
+			<div class="wow fadeInLeft col-md-4 col-sm-4" data-wow-delay="0.3s">
+				<i class="fa fa-group"></i>
+				<h3>10,800</h3>
+				<h3>Trading and Investing with Us</h3>
+			</div>
+
+			<div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.6s">
+				<i class="fa fa-arrow-up "></i>
+				<h3>600</h3>
+        <h3>Monthly Profitable Trades</h3>
+      			</div>
+
+			<div class="wow fadeInRight col-md-4 col-sm-4" data-wow-delay="0.9s">
+				<i class="fa fa-money "></i>
+				<h3>1,690,000</h3>
+				<h3>Total Assets Under Management</h3>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+
+<!-- =========================
+    VIDEO SECTION   
+============================== -->
+<section id="video" class="parallax-section">
+	<div class="container">
+		<div class="row">
+
+			<div class="wow fadeInUp col-md-6 col-sm-10" data-wow-delay="1.3s">
+				<h2>Empowering Your Crypto Success</h2>
+				<h3>Take control of your crypto investments with our expert guidance</h3>
+				<p>At Helping-Hands Crypto Investment, we believe that everyone deserves access to expert knowledge and tools to achieve their crypto investment goals. Our team of experienced professionals is dedicated to providing exceptional service and support, ensuring that our clients have the expertise and guidance they need to succeed in the market.</p>
+			</div>
+			<div class="wow fadeInUp col-md-6 col-sm-10" data-wow-delay="1.6s">
+				<div class="embed-responsive embed-responsive-16by9">
+          <div>
+            <div class="tradingview-widget-container" style="margin:30px 0px 10px 0px;">
+              <div id="tradingview_f933e"><div id="tradingview_c4d27-wrapper" style="position: relative; box-sizing: content-box; font-family: -apple-system, BlinkMacSystemFont, &quot;Trebuchet MS&quot;, Roboto, Ubuntu, sans-serif; margin: 0px auto !important; padding: 0px !important; width: 100%; height: calc(518px);"><iframe title="advanced chart TradingView widget" lang="en" id="tradingview_c4d27" frameborder="0" allowtransparency="true" scrolling="no" allowfullscreen="true" src="https://s.tradingview.com/widgetembed/?hideideas=1&amp;overrides=%7B%7D&amp;enabled_features=%5B%5D&amp;disabled_features=%5B%5D&amp;locale=en#%7B%22symbol%22%3A%22COINBASE%3ABTCUSD%22%2C%22frameElementId%22%3A%22tradingview_c4d27%22%2C%22interval%22%3A%221%22%2C%22hide_side_toolbar%22%3A%220%22%2C%22allow_symbol_change%22%3A%221%22%2C%22save_image%22%3A%221%22%2C%22studies%22%3A%22BB%40tv-basicstudies%22%2C%22theme%22%3A%22light%22%2C%22style%22%3A%229%22%2C%22timezone%22%3A%22Etc%2FUTC%22%2C%22studies_overrides%22%3A%22%7B%7D%22%2C%22utm_source%22%3A%22elite-market.org%22%2C%22utm_medium%22%3A%22widget_new%22%2C%22utm_campaign%22%3A%22chart%22%2C%22utm_term%22%3A%22COINBASE%3ABTCUSD%22%2C%22page-uri%22%3A%22elite-market.org%2Fdashboard%22%7D" style="width: 100%; height: 100%; margin: 0px !important; padding: 0px !important;"></iframe></div></div>
+              <div class="tradingview-widget-copyright" style="width: 100%;"><a href="#" rel="noopener" target="_blank"><span class="blue-text"></span> <span class="blue-text">Personal trading chart</span></a></div>
+              <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+              <script type="text/javascript">
+              new TradingView.widget(
+              {
+              "width": "100%",
+              "height": "550",
+              "symbol": "COINBASE:BTCUSD",
+              "interval": "1",
+              "timezone": "Etc/UTC",
+              "theme": 'light',
+              "style": "9",
+              "locale": "en",
+              "toolbar_bg": "#f1f3f6",
+              "enable_publishing": false,
+              "hide_side_toolbar": false,
+              "allow_symbol_change": true,
+              "calendar": false,
+              "studies": [
+                "BB@tv-basicstudies"
+              ],
+              "container_id": "tradingview_f933e"
+              }
+              );
+              </script>
+              </div>
+          </div>				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+
+<!-- =========================
+    SPEAKERS SECTION   
+============================== -->
+<section id="speakers" class="parallax-section">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-12 col-sm-12 wow bounceIn">
+				<div class="section-title">
+					<h2>Our Services</h2>
+				</div>
+			</div>
+
+			<!-- Testimonial Owl Carousel section
+			================================================== -->
+			<div id="owl-speakers" class="owl-carousel">
+
+				<div class="item wow fadeInUp col-md-3 col-sm-3" data-wow-delay="0.9s">
+					<div class="speakers-wrapper">
+            <i class="fa fa-credit-card" style="font-size: 70px; color: darkgoldenrod;"></i>
+
+
+							<div class="speakers-thumb">
+								<h3>Wallets for Crypto, Forex & Stocks</h3>
+							</div>
+              <p>Store and manage your assets with ease. We provide secure wallets for various currencies and assets, including crypto, forex and stocks, ensuring maximum security and peace of mind.</p>
+					</div>
+				</div>
+
+				<div class="item wow fadeInUp col-md-3 col-sm-3" data-wow-delay="0.6s">
+					<div class="speakers-wrapper">
+            <i class="fa fa-exchange" style="font-size: 70px; color: darkgoldenrod;"></i>
+							<div class="speakers-thumb">
+								<h3>Effortless Currency Transactions</h3>
+							</div>
+              <p>Transact with ease and convenience. Our platform provides quick and secure transactions for your crypto, forex and stock investments, ensuring you get the best deals every time.</p>
+
+					</div>
+				</div>
+
+				<div class="item wow fadeInUp col-md-3 col-sm-3" data-wow-delay="0.9s">
+					<div class="speakers-wrapper">
+	          <i class="fa fa-bitcoin" style="font-size: 60px; color: darkgoldenrod;"></i>
+            <div class="speakers-thumb">
+								<h3>Invest in Bitcoin with Confidence</h3>
+								
+							</div>
+              <p>Invest in the future of finance. Our platform offers a range of bitcoin investment options for both novice and experienced traders, providing you with the tools and resources to make informed decisions.</p>
+
+					</div>
+				</div>
+
+				<div class="item wow fadeInUp col-md-3 col-sm-3" data-wow-delay="0.6s">
+					<div class="speakers-wrapper">
+	          <i class="fa fa-exchange" style="font-size: 60px; color: darkgoldenrod;"></i>
+							<div class="speakers-thumb">
+								<h3>Exchange Your Assets Effortlessly</h3>
+							
+							</div>
+              <p>Trade with ease and convenience. Our platform provides quick and secure exchange of your crypto, forex and stock investments, ensuring you get the best deals every time.</p>
+
+					</div>
+				</div>
+
+				<div class="item wow fadeInUp col-md-3 col-sm-3" data-wow-delay="0.6s">
+					<div class="speakers-wrapper">
+	          <i class="fa fa-arrow-down" style="font-size: 60px; color: darkgoldenrod;"></i>
+							<div class="speakers-thumb">
+								<h3>Crypto Trading</h3>
+							
+							</div>
+              <p>Trade the world's most popular cryptocurrencies with Equilibrium Markets. Our platform provides you with real-time data, advanced charting tools, and expert advice to help you make informed decisions and trade profitably.</p>
+					</div>
+				</div>
+				
+			</div>
+
+		</div>
+	</div>
+</section>
+
+<section id="test" class="parallax-section">
+	<div class="container">
+		<div class="row">
+
+			<div class="wow fadeInUp col-md-12 col-sm-12" data-wow-delay="0.6s">
+				<div class="section-title">
+					<h2>Testimonies</h2>
+				</div>
+			</div>
+
+			<div class="wow fadeInUp col-md-10 col-sm-10" data-wow-delay="0.9s">
+			
+				<div class="tab-content">
+
+					<div role="tabpanel" class="tab-pane active" id="fday">
+						<!-- program speaker here -->
+						<div class="col-md-2 col-sm-2">
+							<img src="images/program-img1.jpg" class="img-responsive" alt="program">
+						</div>
+						<div class="col-md-10 col-sm-10">
+							
+							<h3>Jenny Green</h3>
+							
+            <p>"I recently started trading cryptocurrencies and Helping Hands Crypto Investment has been a great resource for me. Their platform is intuitive and their educational resources are top-notch."</p>		
+          				</div>
+
+						<!-- program divider -->
+						<div class="program-divider col-md-12 col-sm-12"></div>
+
+						<!-- program speaker here -->
+						<div class="col-md-2 col-sm-2">
+							<img src="images/program-img2.jpg" class="img-responsive" alt="program">
+						</div>
+						<div class="col-md-10 col-sm-10">
+						
+							<h3>Johnathan Mark</h3>
+							
+							<p>"Helping Hands Crypto Investment has been my go-to for forex trading. The platform is reliable and the customer support is excellent."</p>
+						</div>
+
+						<!-- program divider -->
+						<div class="program-divider col-md-12 col-sm-12"></div>
+
+						<!-- program speaker here -->
+						<div class="col-md-2 col-sm-2">
+							<img src="images/program-img3.jpg" class="img-responsive" alt="program">
+						</div>
+						<div class="col-md-10 col-sm-10">
+							
+							<h3>Bob Johnson</h3>
+							<p>"I've been usingHelping Hands Crypto Investment for a few months now and I'm really impressed with their platform. It's easy to use and the copytrading feature has been a game changer for me."</p>
+						</div>
+					</div>
+
+					
+
+				</div>
+
+		</div>
+	</div>
+</section>
+
+
+<!-- =========================
+    PROGRAM SECTION   
+============================== -->
+<section id="program" class="parallax-section">
+	<div class="container">
+		<div class="row">
+
+			<div class="wow fadeInUp col-md-12 col-sm-12" data-wow-delay="0.6s">
+				<div class="section-title">
+					<h2>Market Overview</h2>
+				</div>
+			</div>
+
+			<div class="tradingview-widget-container" style="width: 100%; height: 104px;">
+        <iframe scrolling="no" allowtransparency="true" frameborder="0" src="https://www.tradingview-widget.com/embed-widget/tickers/?locale=en#%7B%22symbols%22%3A%5B%7B%22proName%22%3A%22FOREXCOM%3ASPXUSD%22%2C%22title%22%3A%22S%26P%20500%22%7D%2C%7B%22proName%22%3A%22FOREXCOM%3ANSXUSD%22%2C%22title%22%3A%22US%20100%22%7D%2C%7B%22proName%22%3A%22FX_IDC%3AEURUSD%22%2C%22title%22%3A%22EUR%2FUSD%22%7D%2C%7B%22proName%22%3A%22BITSTAMP%3ABTCUSD%22%2C%22title%22%3A%22Bitcoin%22%7D%2C%7B%22proName%22%3A%22BITSTAMP%3AETHUSD%22%2C%22title%22%3A%22Ethereum%22%7D%5D%2C%22colorTheme%22%3A%22dark%22%2C%22isTransparent%22%3Atrue%2C%22showSymbolLogo%22%3Atrue%2C%22width%22%3A%22100%25%22%2C%22height%22%3A104%2C%22utm_source%22%3A%22elite-market.org%22%2C%22utm_medium%22%3A%22widget_new%22%2C%22utm_campaign%22%3A%22tickers%22%2C%22page-uri%22%3A%22elite-market.org%2Findex.php%23market%22%7D" title="tickers TradingView widget" lang="en" style="user-select: none; box-sizing: border-box; display: block; height: calc(100% - 32px); width: 100%;"></iframe>
+        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/?utm_source=elite-market.org&amp;utm_medium=widget_new&amp;utm_campaign=tickers" rel="noopener" target="_blank"><span class="blue-text">Markets today</span></a> by TradingView
+        </div>
+        
+    <style>
+.tradingview-widget-copyright {
+font-size: 13px !important;
+line-height: 32px !important;
+text-align: center !important;
+vertical-align: middle !important;
+/* @mixin sf-pro-display-font; */
+font-family: -apple-system, BlinkMacSystemFont, 'Trebuchet MS', Roboto, Ubuntu, sans-serif !important;
+color: #B2B5BE !important;
+}
+
+.tradingview-widget-copyright .blue-text {
+color: #2962FF !important;
+}
+
+.tradingview-widget-copyright a {
+text-decoration: none !important;
+color: #B2B5BE !important;
+}
+
+.tradingview-widget-copyright a:visited {
+color: #B2B5BE !important;
+}
+
+.tradingview-widget-copyright a:hover .blue-text {
+color: #1E53E5 !important;
+}
+
+.tradingview-widget-copyright a:active .blue-text {
+color: #1848CC !important;
+}
+
+.tradingview-widget-copyright a:visited .blue-text {
+color: #2962FF !important;
+}
+</style></div>
+	</div>
+
+  
+</section>
+
+<div class="tradingview-widget-container" style="width: 100%; height: 100%;">
+  <iframe scrolling="no" allowtransparency="true" frameborder="0" src="https://www.tradingview-widget.com/embed-widget/market-quotes/?locale=en#%7B%22width%22%3A%22100%25%22%2C%22height%22%3A%22100%25%22%2C%22symbolsGroups%22%3A%5B%7B%22name%22%3A%22Indices%22%2C%22originalName%22%3A%22Indices%22%2C%22symbols%22%3A%5B%7B%22name%22%3A%22FOREXCOM%3ASPXUSD%22%2C%22displayName%22%3A%22S%26P%20500%22%7D%2C%7B%22name%22%3A%22FOREXCOM%3ANSXUSD%22%2C%22displayName%22%3A%22US%20100%22%7D%2C%7B%22name%22%3A%22FOREXCOM%3ADJI%22%2C%22displayName%22%3A%22Dow%2030%22%7D%2C%7B%22name%22%3A%22INDEX%3ANKY%22%2C%22displayName%22%3A%22Nikkei%20225%22%7D%2C%7B%22name%22%3A%22INDEX%3ADEU40%22%2C%22displayName%22%3A%22DAX%20Index%22%7D%2C%7B%22name%22%3A%22FOREXCOM%3AUKXGBP%22%2C%22displayName%22%3A%22UK%20100%22%7D%5D%7D%2C%7B%22name%22%3A%22Futures%22%2C%22originalName%22%3A%22Futures%22%2C%22symbols%22%3A%5B%7B%22name%22%3A%22CME_MINI%3AES1!%22%2C%22displayName%22%3A%22S%26P%20500%22%7D%2C%7B%22name%22%3A%22CME%3A6E1!%22%2C%22displayName%22%3A%22Euro%22%7D%2C%7B%22name%22%3A%22COMEX%3AGC1!%22%2C%22displayName%22%3A%22Gold%22%7D%2C%7B%22name%22%3A%22NYMEX%3ACL1!%22%2C%22displayName%22%3A%22Crude%20Oil%22%7D%2C%7B%22name%22%3A%22NYMEX%3ANG1!%22%2C%22displayName%22%3A%22Natural%20Gas%22%7D%2C%7B%22name%22%3A%22CBOT%3AZC1!%22%2C%22displayName%22%3A%22Corn%22%7D%5D%7D%2C%7B%22name%22%3A%22Bonds%22%2C%22originalName%22%3A%22Bonds%22%2C%22symbols%22%3A%5B%7B%22name%22%3A%22CME%3AGE1!%22%2C%22displayName%22%3A%22Eurodollar%22%7D%2C%7B%22name%22%3A%22CBOT%3AZB1!%22%2C%22displayName%22%3A%22T-Bond%22%7D%2C%7B%22name%22%3A%22CBOT%3AUB1!%22%2C%22displayName%22%3A%22Ultra%20T-Bond%22%7D%2C%7B%22name%22%3A%22EUREX%3AFGBL1!%22%2C%22displayName%22%3A%22Euro%20Bund%22%7D%2C%7B%22name%22%3A%22EUREX%3AFBTP1!%22%2C%22displayName%22%3A%22Euro%20BTP%22%7D%2C%7B%22name%22%3A%22EUREX%3AFGBM1!%22%2C%22displayName%22%3A%22Euro%20BOBL%22%7D%5D%7D%2C%7B%22name%22%3A%22Forex%22%2C%22originalName%22%3A%22Forex%22%2C%22symbols%22%3A%5B%7B%22name%22%3A%22FX%3AEURUSD%22%2C%22displayName%22%3A%22EUR%2FUSD%22%7D%2C%7B%22name%22%3A%22FX%3AGBPUSD%22%2C%22displayName%22%3A%22GBP%2FUSD%22%7D%2C%7B%22name%22%3A%22FX%3AUSDJPY%22%2C%22displayName%22%3A%22USD%2FJPY%22%7D%2C%7B%22name%22%3A%22FX%3AUSDCHF%22%2C%22displayName%22%3A%22USD%2FCHF%22%7D%2C%7B%22name%22%3A%22FX%3AAUDUSD%22%2C%22displayName%22%3A%22AUD%2FUSD%22%7D%2C%7B%22name%22%3A%22FX%3AUSDCAD%22%2C%22displayName%22%3A%22USD%2FCAD%22%7D%5D%7D%5D%2C%22showSymbolLogo%22%3Atrue%2C%22colorTheme%22%3A%22dark%22%2C%22isTransparent%22%3Atrue%2C%22utm_source%22%3A%22elite-market.org%22%2C%22utm_medium%22%3A%22widget_new%22%2C%22utm_campaign%22%3A%22market-quotes%22%2C%22page-uri%22%3A%22elite-market.org%2Findex.php%23market%22%7D" title="market quotes TradingView widget" lang="en" style="user-select: none; box-sizing: border-box; display: block; height: calc(100% - 32px); width: 100%;"></iframe>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/?utm_source=elite-market.org&amp;utm_medium=widget_new&amp;utm_campaign=market-quotes" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets</span></a> on TradingView</div>
+  
+<style>
+	.tradingview-widget-copyright {
+		font-size: 13px !important;
+		line-height: 32px !important;
+		text-align: center !important;
+		vertical-align: middle !important;
+		/* @mixin sf-pro-display-font; */
+		font-family: -apple-system, BlinkMacSystemFont, 'Trebuchet MS', Roboto, Ubuntu, sans-serif !important;
+		color: #B2B5BE !important;
+	}
+
+	.tradingview-widget-copyright .blue-text {
+		color: #2962FF !important;
+	}
+
+	.tradingview-widget-copyright a {
+		text-decoration: none !important;
+		color: #B2B5BE !important;
+	}
+
+	.tradingview-widget-copyright a:visited {
+		color: #B2B5BE !important;
+	}
+
+	.tradingview-widget-copyright a:hover .blue-text {
+		color: #1E53E5 !important;
+	}
+
+	.tradingview-widget-copyright a:active .blue-text {
+		color: #1848CC !important;
+	}
+
+	.tradingview-widget-copyright a:visited .blue-text {
+		color: #2962FF !important;
+	}
+	</style></div>
+
+
+<!-- =========================
+   REGISTER SECTION   
+============================== -->
+
+
+
+<!-- =========================
+    FAQ SECTION   
+============================== -->
+<section id="venue" class="parallax-section">
+	<div class="container">
+		<div class="row">
+
+			<!-- Section title
+			================================================== -->
+			<div class="wow bounceIn col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 text-center">
+				<div class="section-title">
+					<h2>F A Qs?</h2>
+					<p>Frequently Asked Questions</p>
+				</div>
+			</div>
+
+			<div class="wow fadeInUp col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10" data-wow-delay="0.9s">
+				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+  					<div class="panel panel-default">
+   						<div class="panel-heading" role="tab" id="headingOne">
+      						<h4 class="panel-title">
+        						<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+          							 What is Helping-hands Crypto Investment?
+        						</a>
+      						</h4>
+    					</div>
+   						<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      						<div class="panel-body">
+        						<p>Equilibrium Markets is an investment and copy trading platform that allows users to invest in stocks, forex, and cryptocurrencies. Our platform provides access to a range of investment tools and resources to help users make informed investment decisions.</p>
+      						</div>
+   						 </div>
+ 					</div>
+
+    				<div class="panel panel-default">
+   						<div class="panel-heading" role="tab" id="headingTwo">
+      						<h4 class="panel-title">
+        						<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          						How do i get started with helping hands Crypto Investment
+        						</a>
+      						</h4>
+    					</div>
+   						<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      						<div class="panel-body">
+                            	<p>Getting started with Equilibrium Markets is easy. Simply sign up for an account, make a deposit, and start investing in your favorite assets. Our platform provides a user-friendly interface that allows you to track your investments, set goals, and manage your portfolio with ease.</p>
+      						</div>
+   						 </div>
+ 					</div>
+
+ 					<div class="panel panel-default">
+   						<div class="panel-heading" role="tab" id="headingThree">
+      						<h4 class="panel-title">
+        						<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          							What are the investment options available at helping-hands
+        						</a>
+      						</h4>
+    					</div>
+   						<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      						<div class="panel-body">
+                            	<p>Equilibrium Markets provides access to a range of investment options, including stocks, forex, and cryptocurrencies. Our platform also offers copy trading, which allows users to automatically replicate the trades of experienced traders. This can be a great option for those who are new to trading or who want to diversify their portfolio.</p>
+      						</div>
+   						 </div>
+ 					 </div>
+
+           
+
+ 				 </div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+
+
+
+<!-- =========================
+    FOOTER SECTION   
+============================== -->
+<footer>
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-12 col-sm-12">
+        <div class="text-sm text-gray-600 font-semibold py-1">
+          Copyright &copy;<script data-cfasync="false" ></script><script>document.write(new Date().getFullYear());</script> All rights reserved 
+
+        </div>
+				
+				<ul class="social-icon">
+					<li><a href="#" class="fa fa-facebook wow fadeInUp" data-wow-delay="1s"></a></li>
+					<li><a href="#" class="fa fa-twitter wow fadeInUp" data-wow-delay="1.3s"></a></li>
+
+				</ul>
+
+			</div>
+			
+		</div>
+	</div>
+</footer>
+
+
+<!-- Back top -->
+<a href="#back-top" class="go-top"><i class="fa fa-angle-up"></i></a>
+
+
+<!-- =========================
+     SCRIPTS   
+============================== -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.parallax.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+</html>
