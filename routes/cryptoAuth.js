@@ -32,14 +32,14 @@ router.post('/cryptoRegister', registerUser);
 
 // user sign out
 
-router.get('/logout', (req, res) => {
+router.get('/cryptoLogout', (req, res) => {
 	// Use a callback function for req.logout() to ensure it completes before continuing
 	req.logout(function (err) {
 		if (err) {
 			console.error(err);
 		}
 		req.flash('success_msg', 'You have successfully logged out');
-		res.redirect('/');
+		res.redirect('/cryptoInvestment');
 	});
 });
 module.exports = router;

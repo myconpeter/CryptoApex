@@ -18,8 +18,4 @@ router.get('/cryptoInvestment', (req, res, next) => {
 	res.render('cryptoInvestment');
 });
 
-router.get('/assetManagement', (req, res, next) => {
-	res.render('assetManagement');
-});
-
 module.exports = router;

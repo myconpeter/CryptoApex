@@ -25,6 +25,10 @@ const changePasswordRoutes = require('./routes/changePassword');
 const contactRoutes = require('./routes/contact');
 const profileAndTeamRoutes = require('./routes/profileAndTeam');
 
+// all Pages
+
+const cryptoPages = require('./routes/cryptoPages');
+
 // view engine setup
 app.set('view engine', 'ejs');
 
@@ -69,6 +73,7 @@ app.use('/', cryptoAuth);
 app.use('/', changePasswordRoutes);
 app.use('/', contactRoutes);
 app.use('/', profileAndTeamRoutes);
+app.use('/', cryptoPages);
 
 app.get('*', (req, res, next) => {
 	res.render('error404');
