@@ -20,6 +20,7 @@ require('./config/passport');
 
 const indexRoutes = require('./routes/index');
 const authRoutes = require('./routes/auth');
+const cryptoAuth = require('./routes/cryptoAuth');
 const changePasswordRoutes = require('./routes/changePassword');
 const contactRoutes = require('./routes/contact');
 const profileAndTeamRoutes = require('./routes/profileAndTeam');
@@ -45,17 +46,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use(
-	session({
-		secret: 'mycon',
-		resave: true,
-		saveUninitialized: true,
-	})
-);
-
-app.use(passport.initialize());
-app.use(passport.session());
-
 // req flash
 app.use(flash());
 
@@ -75,6 +65,7 @@ app.use((req, res, next) => {
 
 app.use('/', indexRoutes);
 app.use('/', authRoutes);
+app.use('/', cryptoAuth);
 app.use('/', changePasswordRoutes);
 app.use('/', contactRoutes);
 app.use('/', profileAndTeamRoutes);

@@ -8,27 +8,27 @@ const { response } = require('express');
 const registerUser = require('../config/registerUser'); // Import the registration function
 //login get
 
-router.get('/login', (req, res, next) => {
-	res.render('login');
+router.get('/cryptoLogin', (req, res, next) => {
+	res.render('cryptoLogin');
 });
 
 //login post
 
-router.post('/login', (req, res, next) => {
+router.post('/cryptoLogin', (req, res, next) => {
 	passport.authenticate('userLocal', {
-		successRedirect: '/',
-		failureRedirect: '/login',
+		successRedirect: '/cryptoProfile',
+		failureRedirect: '/cryptoLogin',
 		failureFlash: true,
 	})(req, res, next);
 });
 
 //signup get
 
-router.get('/register', (req, res, next) => {
-	res.render('register');
+router.get('/cryptoRegister', (req, res, next) => {
+	res.render('cryptoRegister');
 });
 
-router.post('/register', registerUser);
+router.post('/cryptoRegister', registerUser);
 
 // user sign out
 

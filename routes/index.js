@@ -1,6 +1,5 @@
 const express = require('express');
 const router = express.Router();
-const { ensureAuthenticated } = require('../config/auth');
 
 // get homepage
 router.get('/', async (req, res) => {
