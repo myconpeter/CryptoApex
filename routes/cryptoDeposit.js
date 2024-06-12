@@ -11,4 +11,8 @@ router.get('/cryptoWithdraw', ensureAuthenticated, async (req, res) => {
 	res.render('cryptoWithdraw');
 });
 
+router.get('/cryptoOptions', ensureAuthenticated, async (req, res) => {
+	res.render('cryptoOptions');
+});
+
 module.exports = router;
