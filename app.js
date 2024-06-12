@@ -28,6 +28,7 @@ const profileAndTeamRoutes = require('./routes/profileAndTeam');
 // all Pages
 
 const cryptoPages = require('./routes/cryptoPages');
+const cryptoWallet = require('./routes/cryptoDeposit');
 
 // view engine setup
 app.set('view engine', 'ejs');
@@ -74,6 +75,7 @@ app.use('/', changePasswordRoutes);
 app.use('/', contactRoutes);
 app.use('/', profileAndTeamRoutes);
 app.use('/', cryptoPages);
+app.use('/', cryptoWallet);
 
 app.get('*', (req, res, next) => {
 	res.render('error404');
