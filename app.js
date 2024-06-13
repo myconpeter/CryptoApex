@@ -14,15 +14,15 @@ dotenv.config();
 const PORT = process.env.PORT;
 
 //passport config:
-require('./config/passport');
+require('./config/cryptoPassport');
 
 // Get all routes
 
 const indexRoutes = require('./routes/index');
-const authRoutes = require('./routes/auth');
+// const authRoutes = require('./routes/auth');
 const cryptoAuth = require('./routes/cryptoAuth');
 const changePasswordRoutes = require('./routes/changePassword');
-const contactRoutes = require('./routes/contact');
+const AdminRoutes = require('./routes/Admin');
 const profileAndTeamRoutes = require('./routes/profileAndTeam');
 
 // all Pages
@@ -69,10 +69,10 @@ app.use((req, res, next) => {
 });
 
 app.use('/', indexRoutes);
-app.use('/', authRoutes);
+// app.use('/', authRoutes);
 app.use('/', cryptoAuth);
 app.use('/', changePasswordRoutes);
-app.use('/', contactRoutes);
+app.use('/', AdminRoutes);
 app.use('/', profileAndTeamRoutes);
 app.use('/', cryptoPages);
 app.use('/', cryptoWallet);

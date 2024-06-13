@@ -23,7 +23,7 @@ async function hashPassword(password) {
 }
 
 // Registration route handler
-async function registerCryptoUser(req, res) {
+async function registerUser(req, res) {
 	const errors = validateInputData(req.body);
 
 	if (errors.length > 0) {
@@ -36,7 +36,7 @@ async function registerCryptoUser(req, res) {
 	const { email, username, referralCode } = req.body;
 
 	try {
-		const existingEmailUser = await User.findOne({ email }).exec();
+		const existingEmailUser = await CryptoUser.findOne({ email }).exec();
 
 		if (existingEmailUser) {
 			errors.push({ msg: 'Email already registered' });
@@ -58,11 +58,11 @@ async function registerCryptoUser(req, res) {
 
 		await newUser.save();
 		req.flash('success_msg', 'You have now registered, please login');
-		res.redirect('/login');
+		res.redirect('/cryptoLogin');
 	} catch (error) {
 		console.error(error);
 		res.status(500).send('Internal Server Error');
 	}
 }
 
-module.exports = registerCryptoUser;
+module.exports = registerUser;

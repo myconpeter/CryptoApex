@@ -2,10 +2,10 @@ const express = require('express');
 const router = express.Router();
 const passport = require('passport');
 const bcrypt = require('bcrypt');
-const User = require('../models/user');
+const CryptoUser = require('../models/cryptoUser');
 const request = require('request');
 const { response } = require('express');
-const registerUser = require('../config/registerUser'); // Import the registration function
+const registerCryptoUser = require('../config/registerCryptoUser'); // Import the registration function
 //login get
 
 router.get('/cryptoLogin', (req, res, next) => {
@@ -28,7 +28,7 @@ router.get('/cryptoRegister', (req, res, next) => {
 	res.render('cryptoRegister');
 });
 
-router.post('/cryptoRegister', registerUser);
+router.post('/cryptoRegister', registerCryptoUser);
 
 // user sign out
 
