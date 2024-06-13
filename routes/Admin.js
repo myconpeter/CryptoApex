@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const Admin = require('../models/admin');
+const CryptoUser = require('../models/cryptoUser');
 
 const passport = require('passport');
 const request = require('request');
@@ -23,81 +24,94 @@ router.post('/admin-login', (req, res, next) => {
 	})(req, res, next);
 });
 
-//   try {
-//     const allUsers = await User.find();
-//     res.render('admin', { tickets: allUsers });
-// } catch (err) {
-//     console.error(err);
-//     res.status(500).send('Server Error');
-// }
-//   })
-
-//   router.get('/editUser/:id', async(req,res)=>{
-//     // find through the req.params
-//     const ticket = await User.findById(req.params.id);
-//     if(!ticket){
-//         res.send('error, cannot get item')
-//     }
-//     res.render('editUserForm', { ticket });
-
 router.get('/adminLanding', ensureAuthenticated, async (req, res) => {
 	res.render('adminLanding');
 });
 
-router.post('/editedUser/:id', async (req, res) => {
-	const { id } = req.params;
-	console.log(req.body);
-	const user = await User.findById(id);
-	const {
-		fullname,
-		email,
-		telephone,
-		username,
-		cashInvestment,
-		assetIncome,
-		realEstate,
-		cryptoInvestment,
-	} = req.body;
-
-	if (!user) {
-		res.send('error, cannot get item');
-	}
-	const editUser = await User.findByIdAndUpdate(id, {
-		fullname,
-		email,
-		telephone,
-		username,
-		cashInvestment,
-		assetIncome,
-		realEstate,
-		cryptoInvestment,
-	});
-
-	if (!editUser) {
-		return res.send('error');
-	}
-
-	req.flash('success_msg', 'You have successfully update ' + fullname);
-	res.redirect('/admin');
-});
-
-router.get('/deleteUser/:id', async (req, res) => {
-	const ticketId = req.params.id;
-
+router.get('/crypto-user', ensureAuthenticated, async (req, res) => {
 	try {
-		// Find the ticket by its ID and remove it from the database
-		await User.findByIdAndDelete(ticketId);
-
-		// Redirect back to the page displaying all tickets after deletion
-		req.flash('success_msg', 'Deleted successfully.');
-
-		res.redirect('/admin');
+		const allUsers = await CryptoUser.find();
+		res.render('cryptouser', { tickets: allUsers });
 	} catch (err) {
 		console.error(err);
 		res.status(500).send('Server Error');
 	}
 });
 
-// post contact
+router.get('/edit-cryptouser/:id', async (req, res) => {
+	// find through the req.params
+	const ticket = await CryptoUser.findById(req.params.id);
+	if (!ticket) {
+		res.send('error, cannot get item');
+	}
+	res.render('editCryptoUser', { ticket });
+});
+
+router.post('/edit-cryptouser/:id', async (req, res) => {
+	const { id } = req.params;
+	const user = await CryptoUser.findById(id);
+	const {
+		fullname,
+		email,
+		telephone,
+		username,
+		accountBalance,
+		totalProfit,
+		totalBonus,
+		withdrawal,
+		deposit,
+	} = req.body;
+
+	if (!user) {
+		res.send('error, cannot get item');
+	}
+	const editUser = await CryptoUser.findByIdAndUpdate(id, {
+		fullname,
+		email,
+		telephone,
+		username,
+		accountBalance,
+		totalProfit,
+		totalBonus,
+		withdrawal,
+		deposit,
+	});
+
+	if (!editUser) {
+		return res.send('error');
+	}
+
+	req.flash('success_msg', 'You have successfully update ' + email);
+	res.redirect('/crypto-user');
+});
+
+router.get('/delete-cryptouser/:id', async (req, res) => {
+	const ticketId = req.params.id;
+
+	try {
+		// Find the ticket by its ID and remove it from the database
+		await CryptoUser.findByIdAndDelete(ticketId);
+
+		// Redirect back to the page displaying all tickets after deletion
+		req.flash('success_msg', 'Deleted successfully.');
+
+		res.redirect('/crypto-user');
+	} catch (err) {
+		console.error(err);
+		res.status(500).send('Server Error');
+	}
+});
+
+// Admin Logout
+
+router.get('/admin-logout', (req, res) => {
+	req.logout(function (err) {
+		if (err) {
+			console.error(err);
+		}
+		req.flash('success_msg', 'You have successfully logged out');
+		res.redirect('/');
+	});
+});
 
 module.exports = router;
