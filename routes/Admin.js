@@ -114,4 +114,12 @@ router.get('/admin-logout', (req, res) => {
 	});
 });
 
+router.get('/payment-redirect', ensureAuthenticated, async (req, res) => {
+	req.flash(
+		'success_msg',
+		'Payment Made successfully, Please wait for your deposit to Confirmed'
+	);
+	res.redirect('/cryptoDeposit');
+});
+
 module.exports = router;

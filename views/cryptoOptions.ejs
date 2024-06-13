@@ -68,14 +68,14 @@
 							<li class="flex-1 md:flex-none md:mr-3">
 								<a
 									class="inline-block py-2 px-4 text-white no-underline text-xs bg-yellow-600 rounded-md"
-									href="#"
+									href="/cryptoDeposit"
 									>Fund Your Account</a
 								>
 							</li>
 							<li class="flex-1 md:flex-none md:mr-3">
 								<a
 									class="inline-block py-2 px-4 text-white no-underline text-xs bg-red-400 rounded-md"
-									href="#"
+									href="/cryptoWithdraw"
 									>Withdraw Funds</a
 								>
 							</li>
@@ -100,7 +100,7 @@
 										id="myDropdown"
 										class="dropdownlist absolute bg-gray-800 text-white right-0 mt-3 p-3 overflow-auto z-30 invisible">
 										<a
-											href="#"
+											href="/cryptoProfile"
 											class="p-2 hover:bg-gray-800 text-white text-sm no-underline hover:no-underline block"
 											><i class="fa fa-user fa-fw"></i>
 											Profile</a
@@ -109,7 +109,7 @@
 										<div
 											class="border border-gray-800"></div>
 										<a
-											href="#"
+											href="/cryptoLogout"
 											class="p-2 hover:bg-gray-800 text-white text-sm no-underline hover:no-underline block"
 											><i
 												class="fas fa-sign-out-alt fa-fw"></i>
@@ -350,7 +350,7 @@
 					</div>
 
 					<!-- the confirm payment -->
-					<a href="#">
+					<a href="/payment-redirect">
 						<button class="mt-3 px-6 py-2 bg-green-400 rounded-md">
 							I have made Payment
 						</button>
@@ -358,6 +358,47 @@
 				</section>
 			</div>
 		</main>
+
+		<script>
+			/*Toggle dropdown list*/
+			function toggleDD(myDropMenu) {
+				document
+
+					.getElementById(myDropMenu)
+					.classList.toggle('invisible');
+			}
+			/*Filter dropdown options*/
+			function filterDD(myDropMenu, myDropMenuSearch) {
+				var input, filter, ul, li, a, i;
+				input = document.getElementById(myDropMenuSearch);
+				filter = input.value.toUpperCase();
+				div = document.getElementById(myDropMenu);
+				a = div.getElementsByTagName('a');
+				for (i = 0; i < a.length; i++) {
+					if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+						a[i].style.display = '';
+					} else {
+						a[i].style.display = 'none';
+					}
+				}
+			}
+			// Close the dropdown menu if the user clicks outside of it
+			window.onclick = function (event) {
+				if (
+					!event.target.matches('.drop-button') &&
+					!event.target.matches('.drop-search')
+				) {
+					var dropdowns =
+						document.getElementsByClassName('dropdownlist');
+					for (var i = 0; i < dropdowns.length; i++) {
+						var openDropdown = dropdowns[i];
+						if (!openDropdown.classList.contains('invisible')) {
+							openDropdown.classList.add('invisible');
+						}
+					}
+				}
+			};
+		</script>
 
 		<script>
 			function myFunction() {
