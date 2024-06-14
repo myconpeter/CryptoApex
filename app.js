@@ -11,6 +11,8 @@ const dotenv = require('dotenv');
 const app = express();
 dotenv.config();
 
+// crypto-apex is the new name
+
 const PORT = process.env.PORT;
 
 //passport config:
@@ -23,7 +25,7 @@ const indexRoutes = require('./routes/index');
 const cryptoAuth = require('./routes/cryptoAuth');
 const changePasswordRoutes = require('./routes/changePassword');
 const AdminRoutes = require('./routes/Admin');
-const profileAndTeamRoutes = require('./routes/profileAndTeam');
+const profileAndTeamRoutes = require('./routes/cryptoProfile');
 
 // all Pages
 
