@@ -39,7 +39,7 @@ router.get('/cryptoLogout', (req, res) => {
 			console.error(err);
 		}
 		req.flash('success_msg', 'You have successfully logged out');
-		res.redirect('/cryptoInvestment');
+		res.redirect('/');
 	});
 });
 module.exports = router;
