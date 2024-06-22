@@ -1,18 +1,19 @@
 const Admin = require('../models/admin');
 const LocalStrategy = require('passport-local').Strategy;
-const passport = require('passport');
+const adminPassport = require('passport');
 
-passport.use(
+adminPassport.use(
 	'userLocal',
 	new LocalStrategy(
 		{ usernameField: 'email' },
 		async (email, password, done) => {
 			try {
 				const user = await Admin.findOne({ email });
+				console.log(user);
 
 				if (!user) {
 					return done(null, false, {
-						message: 'This Email is not registered',
+						message: 'This Admin Email is not registered',
 					});
 				}
 
@@ -30,7 +31,7 @@ passport.use(
 	)
 );
 
-passport.serializeUser(async (user, done) => {
+adminPassport.serializeUser(async (user, done) => {
 	try {
 		done(null, user.id);
 	} catch (err) {
@@ -38,7 +39,7 @@ passport.serializeUser(async (user, done) => {
 	}
 });
 
-passport.deserializeUser(async (id, done) => {
+adminPassport.deserializeUser(async (id, done) => {
 	try {
 		const user = await Admin.findById(id);
 		done(null, user);
