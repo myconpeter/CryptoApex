@@ -67,6 +67,204 @@
 			href="index_files/client_default.css"
 			type="text/css"
 			rel="stylesheet" />
+
+		<style type="text/css">
+			.bonus_area {
+				position: fixed;
+				top: 50%;
+				right: 0;
+				width: 180px;
+				border-radius: 5px 0 0 5px;
+				z-index: 99999998;
+				-webkit-transform: translateY(-50%) translateX(100%);
+				-ms-transform: translateY(-50%) translateX(100%);
+				transform: translateY(-50%) translateX(100%);
+				-webkit-transition: all 1s ease;
+				-o-transition: all 1s ease;
+				transition: all 1s ease;
+			}
+			.bonus_area.show {
+				-webkit-transform: translateY(-50%) translateX(0%);
+				-ms-transform: translateY(-50%) translateX(0%);
+				transform: translateY(-50%) translateX(0%);
+				-webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+				box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+			}
+			.bonus_area .inner_area {
+				background: -webkit-gradient(
+					linear,
+					left bottom,
+					left top,
+					from(#176af3),
+					to(#080f20)
+				);
+				background: -webkit-linear-gradient(
+					bottom,
+					#176af3 0%,
+					#080f20 100%
+				);
+				background: -o-linear-gradient(
+					bottom,
+					#176af3 0%,
+					#080f20 100%
+				);
+				background: linear-gradient(
+					to bottom,
+					#080f20 0%,
+					#176af3 100%
+				);
+				border-radius: 5px 0 0 0;
+				padding: 18px 0 23px;
+				position: relative;
+				text-align: center;
+			}
+			.bonus_area .inner_area .icon {
+				display: block;
+				padding-left: 33px;
+				margin-bottom: 15px;
+				text-align: left;
+			}
+			.inner_area .close-btn {
+				position: absolute;
+
+				height: 20px;
+				background: none;
+				outline: none;
+				border: none;
+				z-index: 30;
+				top: 28px;
+				width: 10px;
+				height: 15px;
+				right: 20px;
+			}
+			.inner_area .title {
+				display: block;
+				font-size: 23px;
+				text-transform: uppercase;
+				font-weight: bold;
+				color: #fff;
+				margin-bottom: 0px !important;
+			}
+
+			.inner_area .price {
+				display: block;
+				padding-bottom: 6px;
+				color: #fff;
+				font-size: 38px;
+				margin-left: -14px;
+				line-height: 40px;
+			}
+			.inner_area .price em {
+				display: inline-block;
+				font-size: 16px;
+				line-height: 19px;
+				vertical-align: top;
+				font-weight: normal;
+				font-style: normal;
+				padding-top: 10px;
+				padding-right: 4px;
+			}
+			.inner_area .subtitle {
+				display: block;
+				text-transform: uppercase;
+				font-size: 10px;
+				color: #fff;
+				font-weight: bold;
+				letter-spacing: 5px;
+			}
+			.bonus_area .get-btn {
+				-webkit-transition: all 0.3s ease;
+				-o-transition: all 0.3s ease;
+				transition: all 0.3s ease;
+				display: block;
+				width: 100%;
+				background-color: #176af3;
+				color: #fff;
+				text-align: center;
+				padding: 20px 0 20px;
+				border-radius: 0 0 0 5px;
+			}
+			.bonus_area .get-btn:hover {
+				background: #fff;
+				text-decoration: none;
+				color: #e6922e;
+				-webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+				box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+			}
+			.global-close-btn:before,
+			.global-close-btn:after {
+				content: '';
+				display: block;
+				clear: both;
+				height: 2px;
+				background-color: #fff;
+				-webkit-transform: rotate(45deg);
+				-ms-transform: rotate(45deg);
+				transform: rotate(45deg);
+				position: absolute;
+				left: 0;
+				width: 135%;
+				top: 0;
+				margin-top: 8px;
+				margin-left: -3px;
+				-webkit-transition: all 0.3s ease;
+				-o-transition: all 0.3s ease;
+				transition: all 0.3s ease;
+			}
+			.global-close-btn:after {
+				-webkit-transform: rotate(-45deg);
+				-ms-transform: rotate(-45deg);
+				transform: rotate(-45deg);
+			}
+		</style>
+		<style type="text/css">
+			.goog-te-banner-frame.skiptranslate {
+				display: none !important;
+			}
+			body {
+				top: 0px !important;
+			}
+			.goog-te-combo {
+				background-color: transparent;
+				background-image: url(img/translator.png);
+				background-size: 20px;
+				background-repeat: no-repeat;
+				background-position: center left;
+				border: 2px solid #fff;
+				border-radius: 25px;
+				box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+				color: #cac4c4;
+				font-size: 15px;
+				padding-left: 24px;
+				padding-top: 5px;
+				padding-bottom: 5px;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				width: 45px;
+			}
+			div#google_translate_element {
+				height: 35px;
+				width: 45px;
+				overflow: hidden;
+				margin-left: 10px;
+				position: absolute;
+				top: 18px;
+				right: 310px;
+				z-index: 0;
+			}
+			@media (max-width: 760px) {
+				div#google_translate_element {
+					height: 35px;
+					width: 45px;
+					overflow: hidden;
+					margin-left: 10px;
+					position: absolute;
+					top: 13px;
+					right: 60px;
+					z-index: 1;
+				}
+			}
+		</style>
 	</head>
 	<body
 		data-aos-easing="ease"
@@ -106,8 +304,8 @@
 							<img
 								src="img/loog.png"
 								alt="CryptoApex"
-								height="30"
-								width="30" />
+								height="50"
+								width="50" />
 							<h2 style="margin-left: 5px">CryptoApex</h2>
 						</a>
 					</div>
