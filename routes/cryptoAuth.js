@@ -3,8 +3,7 @@ const router = express.Router();
 const passport = require('passport');
 const bcrypt = require('bcrypt');
 const CryptoUser = require('../models/cryptoUser');
-const request = require('request');
-const { response } = require('express');
+
 const registerCryptoUser = require('../config/registerCryptoUser'); // Import the registration function
 //login get
 

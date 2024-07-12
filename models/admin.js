@@ -10,10 +10,6 @@ const AdminSchema = new mongoose.Schema({
 		type: String,
 		required: true,
 	},
-	isAdmin: {
-		type: Boolean,
-		default: false,
-	},
 });
 
 const Admin = mongoose.model('Admin', AdminSchema);

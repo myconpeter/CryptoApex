@@ -17,6 +17,7 @@ const PORT = process.env.PORT;
 
 //passport config:
 require('./config/cryptoPassport');
+require('./config/AdminPassport');
 
 // Get all routes
 

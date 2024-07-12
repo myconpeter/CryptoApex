@@ -2,9 +2,7 @@ const express = require('express');
 const router = express.Router();
 const CryptoUser = require('../models/cryptoUser');
 
-const passport = require('passport');
-const request = require('request');
-const { response } = require('express');
+const passport = require('../config/AdminPassport');
 const { ensureAuthenticated } = require('../config/auth');
 
 //login get
@@ -16,14 +14,14 @@ router.get('/admin', (req, res, next) => {
 //login post
 
 router.post('/admin-login', (req, res, next) => {
-	passport.authenticate('userLocal', {
+	passport.authenticate('adminLocal', {
 		successRedirect: '/adminLanding',
 		failureRedirect: '/admin',
 		failureFlash: true,
 	})(req, res, next);
 });
 
-router.get('/adminLanding', ensureAuthenticated, async (req, res) => {
+router.get('/adminLanding', async (req, res) => {
 	res.render('adminLanding');
 });
 

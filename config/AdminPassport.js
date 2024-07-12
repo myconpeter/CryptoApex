@@ -1,15 +1,17 @@
 const Admin = require('../models/admin');
 const LocalStrategy = require('passport-local').Strategy;
 const adminPassport = require('passport');
+const cryptoUser = require('../models/cryptoUser');
 
 adminPassport.use(
-	'userLocal',
+	'adminLocal',
 	new LocalStrategy(
 		{ usernameField: 'email' },
 		async (email, password, done) => {
 			try {
 				const user = await Admin.findOne({ email });
 				console.log(user);
+				// console.log(user.password);
 
 				if (!user) {
 					return done(null, false, {
@@ -17,7 +19,8 @@ adminPassport.use(
 					});
 				}
 
-				if (user.password !== password) {
+				if (user.password == password) {
+					console.log(user.password == password);
 					return done(null, user);
 				} else {
 					return done(null, false, {
@@ -41,9 +44,11 @@ adminPassport.serializeUser(async (user, done) => {
 
 adminPassport.deserializeUser(async (id, done) => {
 	try {
-		const user = await Admin.findById(id);
+		const user = await cryptoUser.findById(id);
 		done(null, user);
 	} catch (err) {
 		done(err);
 	}
 });
+
+module.exports = adminPassport;
