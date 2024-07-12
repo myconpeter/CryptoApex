@@ -7,7 +7,7 @@ const { ensureAuthenticated } = require('../config/auth');
 
 //login get
 
-router.get('/admin', (req, res, next) => {
+router.get('/admin', async (req, res) => {
 	res.render('adminLogin');
 });
 
