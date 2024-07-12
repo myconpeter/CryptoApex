@@ -10,7 +10,6 @@ adminPassport.use(
 		async (email, password, done) => {
 			try {
 				const user = await Admin.findOne({ email });
-				console.log(user);
 				// console.log(user.password);
 
 				if (!user) {
@@ -20,7 +19,6 @@ adminPassport.use(
 				}
 
 				if (user.password == password) {
-					console.log(user.password == password);
 					return done(null, user);
 				} else {
 					return done(null, false, {

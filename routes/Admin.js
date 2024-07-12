@@ -25,7 +25,7 @@ router.get('/adminLanding', async (req, res) => {
 	res.render('adminLanding');
 });
 
-router.get('/crypto-user', ensureAuthenticated, async (req, res) => {
+router.get('/crypto-user', async (req, res) => {
 	try {
 		const allUsers = await CryptoUser.find();
 		res.render('cryptouser', { tickets: allUsers });
