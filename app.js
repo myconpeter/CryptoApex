@@ -34,6 +34,8 @@ const cryptoPages = require('./routes/cryptoPages');
 const cryptoWallet = require('./routes/cryptoDeposit');
 
 // view engine setup
+app.set('views', path.join(__dirname, 'views'));
+
 app.set('view engine', 'ejs');
 
 // PASSPORT CONFIGURATION
@@ -47,8 +49,6 @@ app.use(
 
 app.use(passport.initialize());
 app.use(passport.session());
-
-app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -71,11 +71,12 @@ app.use((req, res, next) => {
 	next();
 });
 
+app.use('/', AdminRoutes);
+
 app.use('/', indexRoutes);
 // app.use('/', authRoutes);
 app.use('/', cryptoAuth);
 app.use('/', changePasswordRoutes);
-app.use('/', AdminRoutes);
 app.use('/', profileAndTeamRoutes);
 app.use('/', cryptoPages);
 app.use('/', cryptoWallet);
